@@ -6,14 +6,21 @@
         <div class="navbar-brand">
           <a class="navbar-item">MyCompany</a>
           <!-- hamburger icon -->
-          <span class="navbar-burger">
+          <span
+            class="navbar-burger"
+            v-on:click="toggleNav"
+            v-bind:class="{ 'is-active': isActive }"
+          >
             <span></span>
             <span></span>
             <span></span>
           </span>
         </div>
         <!-- menu -->
-        <div class="navbar-menu">
+        <div
+          class="navbar-menu"
+          v-bind:class="{ 'is-active': isActive }"
+        >
           <div class="navbar-end">
             <router-link to="/" class="navbar-item r-item">Home</router-link>
             <router-link to="faq" class="navbar-item r-item">Features</router-link>
@@ -41,7 +48,17 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data: function () {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleNav: function () {
+      this.isActive = !this.isActive
+    }
+  }
 }
 </script>
 
@@ -66,6 +83,10 @@ a.r-item
     &:hover
       background-color: #f1f1f1
 
+.navbar-burger span
+  background-color: #c1c1c1
 
+.navbar-burger:hover
+  background-color: #f1f1f1;
 
 </style>
