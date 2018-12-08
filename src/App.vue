@@ -43,6 +43,25 @@
       </div>
     </nav>
     <router-view/>
+    <footer class="footer is-primary">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <p>
+              And this right here is a spiffy footer, where you can put stuff.
+            </p>
+          </div>
+          <div class="column has-text-right">
+            <a href="#" class="icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -89,4 +108,11 @@ a.r-item
 .navbar-burger:hover
   background-color: #f1f1f1;
 
+footer
+  background-color: $primary !important
+  color: #fff
+
+  .icon
+    color: #fff
+    margin-left: 20px
 </style>
