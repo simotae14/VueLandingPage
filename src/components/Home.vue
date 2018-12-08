@@ -15,6 +15,65 @@
         </div>
       </div>
     </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns pd is-desktop">
+          <div class="column has-text-centered">
+            <i class="fas fa-cog is-primary"></i>
+          </div>
+          <div class="column is-one-third-desktop">
+            <p class="title">
+              <strong>
+                We provide superior logistics so that your business can succeed in a crazy world.
+              </strong>
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns pd">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">
+                I think it's an absolutely excellent tool for our business. I can't survive without this thing.
+              </p>
+              <p class="subtitle">
+                - Simone Taeggi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">
+                I think it's an absolutely excellent tool for our business. I can't survive without this thing.
+              </p>
+              <p class="subtitle">
+                - Simone Taeggi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">
+                I think it's an absolutely excellent tool for our business. I can't survive without this thing.
+              </p>
+              <p class="subtitle">
+                - Simone Taeggi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -50,4 +109,18 @@ export default {
 
 h2
   margin: 1.5rem 0 2rem 0 !important
+
+.fa-cog
+  font-size: 40px
+
+#learn
+  +desktop
+    margin-bottom: 2rem
+
+.pd
+  +tablet
+    padding: 2em 0
+.card
+  p.title
+    font-weight: 300
 </style>
